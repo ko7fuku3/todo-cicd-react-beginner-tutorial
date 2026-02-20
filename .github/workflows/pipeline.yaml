@@ -1,4 +1,4 @@
-name: Todo App CI/CD Pipline
+name: Todo App CI/CD Pipeline
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.jobs
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -41,7 +41,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.jobs
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -75,7 +75,7 @@ jobs:
           path: dist/
 
       - name: Install Firebase CLI
-        run: npm install -g Firebase-tools
+        run: npm install -g firebase-tools
 
       - name: Install dependencies
         run: npm install
