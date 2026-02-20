@@ -22,7 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-firebase.json
-.firebaserc
 .firebase/
 memo.txt
